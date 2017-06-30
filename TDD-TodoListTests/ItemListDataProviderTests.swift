@@ -29,6 +29,7 @@ class ItemListDataProviderTests: XCTestCase {
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+      sut.itemManager?.removeAll()
         super.tearDown()
     }
   
@@ -140,6 +141,11 @@ class ItemListDataProviderTests: XCTestCase {
     XCTAssertEqual(tableView.numberOfRows(inSection: 0), 1)
     XCTAssertEqual(tableView.numberOfRows(inSection: 1), 0)
   }
+  
+  func test_SelectingACell_SendsNotification() {
+    //pag.157
+  }
+  
 }
 
 extension ItemListDataProviderTests {
@@ -150,6 +156,7 @@ extension ItemListDataProviderTests {
       cellGotDequeued = true
       return super.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
     }
+    
     class func mockTableView(withDataSource dataSource: UITableViewDataSource) -> MockTableView {
         let mockTableView = MockTableView(
           frame: CGRect(x: 0, y: 0, width: 320, height: 480),
@@ -160,12 +167,14 @@ extension ItemListDataProviderTests {
         return mockTableView
     }
   }
-}
-
-class MockItemCell: ItemCell {
-  var cachedItem: ToDoItem?
   
-  override func configCell(with item: ToDoItem, checked: Bool) {
-    cachedItem = item
+  class MockItemCell: ItemCell {
+    var cachedItem: ToDoItem?
+    
+    override func configCell(with item: ToDoItem, checked: Bool) {
+      cachedItem = item
+    }
   }
 }
+
+

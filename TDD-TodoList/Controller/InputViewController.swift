@@ -51,7 +51,11 @@ class InputViewController: UIViewController {
           self.itemManager?.add(item)
         })
       }
+    } else {
+      let item = ToDoItem(title: titleString, itemDescription: descriptionString, timestamp: date?.timeIntervalSince1970, location: nil)
+      self.itemManager?.add(item)
     }
+    dismiss(animated: true, completion: nil)
   }
 
 }

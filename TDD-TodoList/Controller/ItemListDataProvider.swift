@@ -13,7 +13,12 @@ enum Section: Int {
   case done
 }
 
-class ItemListDataProvider: NSObject {
+
+@objc protocol ItemManagerSettable {
+  var itemManager: ItemManager?{ get set }
+}
+
+class ItemListDataProvider: NSObject, ItemManagerSettable {
   var itemManager: ItemManager?
 }
 

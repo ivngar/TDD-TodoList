@@ -25,6 +25,7 @@
 		2C571B6B1F03B043009C41B3 /* APIClienTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571B6A1F03B043009C41B3 /* APIClienTests.swift */; };
 		2C571B6D1F03B465009C41B3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571B6C1F03B465009C41B3 /* APIClient.swift */; };
 		2C571B6F1F03B610009C41B3 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571B6E1F03B610009C41B3 /* Token.swift */; };
+		2C571B711F04FE46009C41B3 /* StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C571B701F04FE46009C41B3 /* StoryboardTests.swift */; };
 		2CD2A96D1EFBCC47006DE688 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A96C1EFBCC47006DE688 /* ItemListViewControllerTests.swift */; };
 		2CD2A96F1EFBCCA9006DE688 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A96E1EFBCCA9006DE688 /* ItemListViewController.swift */; };
 		2CD2A9711EFBCFCD006DE688 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A9701EFBCFCD006DE688 /* ItemListDataProvider.swift */; };
@@ -66,6 +67,7 @@
 		2C571B6A1F03B043009C41B3 /* APIClienTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClienTests.swift; sourceTree = "<group>"; };
 		2C571B6C1F03B465009C41B3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		2C571B6E1F03B610009C41B3 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		2C571B701F04FE46009C41B3 /* StoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTests.swift; sourceTree = "<group>"; };
 		2CD2A96C1EFBCC47006DE688 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
 		2CD2A96E1EFBCCA9006DE688 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		2CD2A9701EFBCFCD006DE688 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				2CD2A96B1EFBCC0D006DE688 /* Model */,
 				2C571B671F03A99B009C41B3 /* Controller */,
 				2C571B6A1F03B043009C41B3 /* APIClienTests.swift */,
+				2C571B701F04FE46009C41B3 /* StoryboardTests.swift */,
 			);
 			path = "TDD-TodoListTests";
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				2C41D3AC1EFA7E8500788DDA /* ItemManagerTests.swift in Sources */,
 				2CFC5C051F02B16600749253 /* InputViewControllerTests.swift in Sources */,
 				2C41D3AA1EFA7CF500788DDA /* LocationTests.swift in Sources */,
+				2C571B711F04FE46009C41B3 /* StoryboardTests.swift in Sources */,
 				2C2B2D501F0264F300E2F5BA /* DetailViewControllerTests.swift in Sources */,
 				2C41D3A31EF93FA200788DDA /* ToDoTests.swift in Sources */,
 				2CD2A96D1EFBCC47006DE688 /* ItemListViewControllerTests.swift in Sources */,
