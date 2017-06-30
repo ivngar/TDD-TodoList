@@ -49,13 +49,14 @@ class InputViewController: UIViewController {
           let placeMark = placemarks?.first
           let item = ToDoItem(title: titleString, itemDescription: descriptionString, timestamp: date?.timeIntervalSince1970, location: Location(name: locationName, coordinate: placeMark?.location?.coordinate))
           self.itemManager?.add(item)
+          self.dismiss(animated: true, completion: nil)
         })
       }
     } else {
       let item = ToDoItem(title: titleString, itemDescription: descriptionString, timestamp: date?.timeIntervalSince1970, location: nil)
       self.itemManager?.add(item)
+      self.dismiss(animated: true, completion: nil)
     }
-    dismiss(animated: true, completion: nil)
   }
 
 }

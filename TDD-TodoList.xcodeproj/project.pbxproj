@@ -30,12 +30,20 @@
 		2CD2A96F1EFBCCA9006DE688 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A96E1EFBCCA9006DE688 /* ItemListViewController.swift */; };
 		2CD2A9711EFBCFCD006DE688 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A9701EFBCFCD006DE688 /* ItemListDataProvider.swift */; };
 		2CD2A9741EFC0AA2006DE688 /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A9731EFC0AA2006DE688 /* ItemListDataProviderTests.swift */; };
+		2CF57F2D1F06516500CDF740 /* TDD_TodoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF57F2C1F06516500CDF740 /* TDD_TodoListUITests.swift */; };
 		2CFC5C051F02B16600749253 /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC5C041F02B16600749253 /* InputViewControllerTests.swift */; };
 		2CFC5C071F02B37900749253 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC5C061F02B37900749253 /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2C41D3941EF92E3600788DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C41D3771EF92E3600788DDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C41D37E1EF92E3600788DDA;
+			remoteInfo = "TDD-TodoList";
+		};
+		2CF57F2F1F06516500CDF740 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C41D3771EF92E3600788DDA /* Project object */;
 			proxyType = 1;
@@ -72,6 +80,9 @@
 		2CD2A96E1EFBCCA9006DE688 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		2CD2A9701EFBCFCD006DE688 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		2CD2A9731EFC0AA2006DE688 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
+		2CF57F2A1F06516500CDF740 /* TDD-TodoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD-TodoListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF57F2C1F06516500CDF740 /* TDD_TodoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_TodoListUITests.swift; sourceTree = "<group>"; };
+		2CF57F2E1F06516500CDF740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFC5C041F02B16600749253 /* InputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
 		2CFC5C061F02B37900749253 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +97,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2C41D3901EF92E3600788DDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF57F271F06516500CDF740 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -108,6 +126,7 @@
 			children = (
 				2C41D3811EF92E3600788DDA /* TDD-TodoList */,
 				2C41D3961EF92E3700788DDA /* TDD-TodoListTests */,
+				2CF57F2B1F06516500CDF740 /* TDD-TodoListUITests */,
 				2C41D3801EF92E3600788DDA /* Products */,
 				2C2B2D531F026B1900E2F5BA /* Frameworks */,
 			);
@@ -118,6 +137,7 @@
 			children = (
 				2C41D37F1EF92E3600788DDA /* TDD-TodoList.app */,
 				2C41D3931EF92E3600788DDA /* TDD-TodoListTests.xctest */,
+				2CF57F2A1F06516500CDF740 /* TDD-TodoListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +214,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2CF57F2B1F06516500CDF740 /* TDD-TodoListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF57F2C1F06516500CDF740 /* TDD_TodoListUITests.swift */,
+				2CF57F2E1F06516500CDF740 /* Info.plist */,
+			);
+			path = "TDD-TodoListUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +261,24 @@
 			productReference = 2C41D3931EF92E3600788DDA /* TDD-TodoListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2CF57F291F06516500CDF740 /* TDD-TodoListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF57F331F06516500CDF740 /* Build configuration list for PBXNativeTarget "TDD-TodoListUITests" */;
+			buildPhases = (
+				2CF57F261F06516500CDF740 /* Sources */,
+				2CF57F271F06516500CDF740 /* Frameworks */,
+				2CF57F281F06516500CDF740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF57F301F06516500CDF740 /* PBXTargetDependency */,
+			);
+			name = "TDD-TodoListUITests";
+			productName = "TDD-TodoListUITests";
+			productReference = 2CF57F2A1F06516500CDF740 /* TDD-TodoListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,6 +301,10 @@
 						CreatedOnToolsVersion = 9.0;
 						TestTargetID = 2C41D37E1EF92E3600788DDA;
 					};
+					2CF57F291F06516500CDF740 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 2C41D37E1EF92E3600788DDA;
+					};
 				};
 			};
 			buildConfigurationList = 2C41D37A1EF92E3600788DDA /* Build configuration list for PBXProject "TDD-TodoList" */;
@@ -271,6 +322,7 @@
 			targets = (
 				2C41D37E1EF92E3600788DDA /* TDD-TodoList */,
 				2C41D3921EF92E3600788DDA /* TDD-TodoListTests */,
+				2CF57F291F06516500CDF740 /* TDD-TodoListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +339,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2C41D3911EF92E3600788DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF57F281F06516500CDF740 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,6 +390,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF57F261F06516500CDF740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF57F2D1F06516500CDF740 /* TDD_TodoListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -338,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = 2C41D37E1EF92E3600788DDA /* TDD-TodoList */;
 			targetProxy = 2C41D3941EF92E3600788DDA /* PBXContainerItemProxy */;
+		};
+		2CF57F301F06516500CDF740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C41D37E1EF92E3600788DDA /* TDD-TodoList */;
+			targetProxy = 2CF57F2F1F06516500CDF740 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -520,6 +592,32 @@
 			};
 			name = Release;
 		};
+		2CF57F311F06516500CDF740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TDD-TodoListUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivangar.TDD-TodoListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TDD-TodoList";
+			};
+			name = Debug;
+		};
+		2CF57F321F06516500CDF740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TDD-TodoListUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivangar.TDD-TodoListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TDD-TodoList";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,6 +647,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2CF57F331F06516500CDF740 /* Build configuration list for PBXNativeTarget "TDD-TodoListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF57F311F06516500CDF740 /* Debug */,
+				2CF57F321F06516500CDF740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
